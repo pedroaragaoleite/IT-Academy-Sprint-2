@@ -1,20 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Sprint 2 - Bootstrap and Sass</title>
-</head>
-<body>
+  </head>
+  <body>
     <!------ Header ------>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/Images/logo-bookmark.svg" alt="Brand"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span
+              ><img src="./assets/Images/icon-hamburger.svg" alt="Menu"
+            /></span>
+          </button>
+          <!-- OF CANVAS -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header mb-5">
+              <img
+                src="./assets/Images/logo-bookmark dark mode.svg"
+                alt="brand"
+              />
+              <button
+                type="button"
+                class=""
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <img src="./assets/Images/icon-close.svg" alt="Menu" />
+              </button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column text-center p-0">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item py-3">
+                  <a class="nav-link active fs-4" aria-current="page" href="#"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item py-3">
+                  <a class="nav-link fs-4" href="#">Pricing</a>
+                </li>
+                <li class="nav-item py-3">
+                  <a class="nav-link fs-4" href="#">Contact</a>
+                </li>
+                <li class="nav-item py-3">
+                  <a
+                    class="nav-link btn btn-outline-secondary btn-lg text-white px-4 fs-4"
+                    href="#"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+              <ul class="offcanvas-social d-flex gap-5 justify-content-center">
+                <li>
+                  <a href=""
+                    ><img src="assets/Images/icon-facebook.svg" alt="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="assets/Images/icon-twitter.svg" alt="Twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Offcanvas end-->
+          <!-- nav bar menu -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 text-dark justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
 
-<scipt
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
-    integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-</body>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-login btn-lg text-white px-4"
+                  href="#"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!------ Header end ------>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
 </html>

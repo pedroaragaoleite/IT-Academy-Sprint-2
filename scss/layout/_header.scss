@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+@use "../custom" as *;
+@use "../abstracts/colors" as *;
+
+header .nav-link  {
+    text-transform: uppercase;
+    color: $dark;
+    font-weight: 500;
+    margin-left: 30px;
+    font-size: 14px;
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.offcanvas {
+    width: 100%;
+    padding: 32px;
+    background-color: $blue-primary;
+    opacity: .9;
+}
+
+
+.offcanvas-social li {
+    border-top: none !important;
+}
+
