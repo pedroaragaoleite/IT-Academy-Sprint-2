@@ -11,6 +11,22 @@
     }
 }
 
+.btn-primary {
+    &:hover {
+        background-color: #FFFFFF !important;
+        color: $primary !important;
+        border: 1px solid $primary !important;
+    }
+}
+
+.btn-light {
+    &:hover {
+        background-color: #FFFFFF !important;
+        color: $dark !important;
+        border: 1px solid $dark !important;
+    }
+}
+
 
 /*  Offcanvas Menu buttons*/
 .offcanvas-body ul li a {

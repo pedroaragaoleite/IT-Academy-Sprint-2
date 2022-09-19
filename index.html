@@ -8,8 +8,9 @@
     <title>Sprint 2 - Bootstrap and Sass</title>
   </head>
   <body>
-    <!------ Header ------>
+    <!----------- HEADER ----------->
     <header>
+      <!---------- NAVBAR ----------->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
@@ -26,7 +27,7 @@
               ><img src="./assets/Images/icon-hamburger.svg" alt="Menu"
             /></span>
           </button>
-          <!-- OF CANVAS -->
+          <!---------- OFFCANVAS START ---------->
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -82,8 +83,9 @@
               </ul>
             </div>
           </div>
-          <!-- Offcanvas end-->
-          <!-- nav bar menu -->
+          <!---------- OFFCANVAS END  ---------->
+
+          <!---------- NAVBAR LINKS ---------->
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
@@ -103,18 +105,67 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link btn btn-login btn-lg text-white px-4"
+                  class="nav-link btn btn-login shadow btn-lg text-white px-4"
                   href="#"
                   >Login</a
                 >
               </li>
             </ul>
           </div>
+          <!---------- NAVBAR LINKS END ---------->
         </div>
       </nav>
-    </header>
+      <!---------- NAVBAR END ----------->
 
-    <!------ Header end ------>
+      <!---------- HEADER HERO ---------->
+      <div class="header-hero">
+        <div class="container align-items-center">
+          <div
+            class="row row-cols-1 row-cols-md-2 align-items-center overflow-hidden justify-content-center justify-content-lg-between"
+          >
+            <div class="col-md-6 header-hero_image mt-5 mb-5 order-md-2">
+              <img
+                class="img-fluid"
+                src="assets/Images/illustration-hero.svg"
+                alt="Web App"
+              />
+              <div class="header-hero_layer rounded-pill"></div>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h1 class="text-center text-lg-start mb-4">
+                A Simple Bookmark Manager
+              </h1>
+              <p class="text-center text-lg-start text-dark mb-4">
+                A clean and simple interface to organize your favorite websites.
+                Open a new browser tab and see your sites load instantly. Try it
+                for free.
+              </p>
+              <ul
+                class="info-btns d-flex gap-3 justify-content-center justify-content-lg-start"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="btn btn-primary shadow bg-primary text-light"
+                    type="button"
+                  >
+                    Get it on Chrome
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-light shadow" type="button">
+                    Get it on Firefox
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- HEADER HERO END---------->
+    </header>
+    <!---------- HEADER END ------------>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
       integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
