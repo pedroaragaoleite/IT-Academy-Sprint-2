@@ -9768,6 +9768,13 @@ ul {
   border: 1px solid #212529 !important;
 }
 
+@media only screen and (min-width: 768px) {
+  .download-card .btn-primary {
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 12px;
+  }
+}
 /*  Offcanvas Menu buttons*/
 .offcanvas-body ul li a {
   color: #FFFFFF;
@@ -9787,6 +9794,34 @@ ul {
   border: none;
 }
 
+.download-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .download-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    height: 400px;
+  }
+  .download-card:nth-child(2) {
+    align-self: center;
+  }
+  .download-card:nth-child(3) {
+    align-self: flex-end;
+  }
+  .download-card {
+    height: 300px;
+  }
+  .download-ad {
+    width: 50%;
+  }
+}
 header .nav-link {
   text-transform: uppercase;
   color: #212529;
@@ -9951,6 +9986,9 @@ header .nav-link:hover {
   .features-tab3 {
     left: -600px;
   }
+}
+.downloads {
+  margin-top: 120px;
 }
 
 /*# sourceMappingURL=main.css.map */

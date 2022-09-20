@@ -27,7 +27,13 @@
     }
 }
 
-
+@media only screen and (min-width: 768px) {
+    .download-card .btn-primary {
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size: 12px;
+    }
+}
 /*  Offcanvas Menu buttons*/
 .offcanvas-body ul li a {
     color: #FFFFFF;
