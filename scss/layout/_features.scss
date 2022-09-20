@@ -1,0 +1,144 @@
+@use "../abstracts/colors" as *;
+@use "../custom" as *;
+
+.features {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.nav-pills {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.features-tab .nav-item {
+    width: 80%;
+    border-bottom: 1px solid $light-gray;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    &:first-child{
+        border-top:1px solid $light-gray;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .features-tab .nav-item {
+        width: 33.3%;
+        &:first-child{
+            border-top: none;
+        }
+    }
+}
+
+.features-tab .nav-link {
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+.features-tab .nav-link.active {
+    position: relative;
+    // width: 100%;
+    background-color: transparent !important;
+    color: #000000 !important;
+    // border-bottom: 3px solid red;
+    border-radius: 0;
+}
+
+.features-tab .nav-link.active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid red;
+    border-radius: 0;
+}
+
+.tab-content {
+    overflow: hidden;
+}
+
+.features-image {
+    position: relative;
+}
+
+.features-layer {
+    width: 1000px;
+    height: 100%;
+    background-color: $primary;
+    position: absolute;
+    top: 20%;
+    left: -650px;
+    z-index: -1;
+}
+.features-tab2 {
+    width: 1000px;
+    height: 90%;
+    background-color: $primary;
+    position: absolute;
+    top: 15%;
+    left: -650px;
+    z-index: -1;
+}
+.features-tab3 {
+    width: 1000px;
+    height: 100%;
+    background-color: $primary;
+    position: absolute;
+    top: 20%;
+    left: -650px;
+    z-index: -1;
+}
+
+.features-tab3 {
+    width: 1000px;
+    height: 90%;
+    background-color: $primary;
+    position: absolute;
+    top: 20%;
+    left: -650px;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 576px) {
+    .features-layer {
+        left: -550px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .features-layer {
+        left: -700px;
+    }
+    .features-tab2 {
+        left: -700px;
+        // height: 100%;
+    }
+    .features-tab3 {
+        left: -700px;
+        // height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .features-layer {
+        top: 15%;
+        left: -550px;
+    }
+    .features-tab2 {
+        left: -650px;
+        // height: 100%;
+    }
+    .features-tab3 {
+        left: -600px;
+        // height: 100%;
+    }
+}
+
