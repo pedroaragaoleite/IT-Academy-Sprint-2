@@ -9724,8 +9724,6 @@ textarea.form-control-lg {
 
 body {
   font-family: "Montserrat", sans-serif;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -9892,6 +9890,8 @@ header .nav-link:hover {
 
 .header-hero {
   margin-top: 120px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .header-hero_image {
   position: relative;
@@ -9909,6 +9909,8 @@ header .nav-link:hover {
 .features {
   margin-top: 120px;
   margin-bottom: 120px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .nav-pills {
@@ -10036,10 +10038,59 @@ header .nav-link:hover {
 }
 .downloads {
   margin-top: 120px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .faq {
   margin-top: 120px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.contact {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #5265E1;
+  color: #ffffff;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.contact p {
+  margin-top: 80px;
+  text-transform: uppercase;
+}
+.contact h3 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact-form input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.contact-form input::placeholder {
+  color: #e5e3e3;
+}
+.contact-form button {
+  color: #ffffff;
+  background-color: #FA5959;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 80px;
+}
+.contact-form button:hover {
+  color: #ffffff;
+  background-color: #f86565;
 }
 
 /*# sourceMappingURL=main.css.map */
