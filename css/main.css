@@ -9822,6 +9822,53 @@ ul {
     width: 50%;
   }
 }
+.faq {
+  text-align: center;
+}
+.faq .accordion-button:focus {
+  box-shadow: none;
+}
+.faq .accordion-item {
+  border: none;
+  border-bottom: 1px solid #e5e3e3 !important;
+}
+.faq .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.faq .accordion-item h2 button {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+  color: #000000;
+}
+.faq .accordion-item h2 button:hover {
+  color: #FA5959;
+}
+.faq .accordion-item h2 button span .accordion-svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.faq .accordion-item h2 button span .accordion-svg path {
+  stroke: #FA5959;
+}
+.faq .accordion-item h2 button.collapsed span .accordion-svg {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.faq .accordion-item h2 button.collapsed .accordion-svg path {
+  stroke: #5265E1;
+}
+.faq .accordion-body {
+  font-size: 14px;
+}
+.faq-btn {
+  margin-top: 30px;
+}
+
 header .nav-link {
   text-transform: uppercase;
   color: #212529;
